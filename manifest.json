@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "HTTPS Enforcer",
+    "version": "1.0",
+    "description": "Redirects HTTP URLs to HTTPS using Declarative Net Request API.",
+    "permissions": ["declarativeNetRequest", "declarativeNetRequestWithHostAccess"],
+    "host_permissions": ["<all_urls>"],
+    "action": {
+      "default_icon": "icon.png"
+    },
+    "declarative_net_request": {
+      "rule_resources": [{
+        "id": "https-redirect",
+        "enabled": true,
+        "path": "rules.json"
+      }]
+    },
+    "icons": {
+      "128": "icon.png"
+    }
+  }
+  
